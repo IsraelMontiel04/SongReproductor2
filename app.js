@@ -12,54 +12,54 @@ const botonAdelante = document.querySelector('.controles button.adelante')
 
 const canciones = [
     {
-        titulo:'Siddhartha',
-        nombre:'Como queremos',
+        titulo:'Como queremos',
+        nombre:'Siddhartha',
         fuente:'music/Siddhartha - Como Queremos.mp3'
     },
     {
-        titulo:'Siddhartha, El Zar',
-        nombre:'Diamantes',
+        titulo:'Diamantes',
+        nombre:'Siddhartha, El Zar',
         fuente:'music/Siddhartha, El Zar - Diamantes.mp3'
     },
     {
-        titulo:'Siddhartha',
-        nombre:'Aurora',
+        titulo:'Aurora',
+        nombre:'Siddhartha',
         fuente:'music/Siddhartha - Aurora.mp3'
     },
     
     {
-        titulo:'Siddhartha',
-        nombre:'Día Tras Día',
+        titulo:'Día Tras Día',
+        nombre:'Siddhartha',
         fuente:'music/Siddhartha - Día Tras Día.mp3'
     },
     {
-        titulo:'Siddhartha, Emmanuel Horvilleur',
-        nombre:'Acapulco',
+        titulo:'Acapulco',
+        nombre:'Siddhartha, Emmanuel Horvilleur',
         fuente:'music/Siddhartha, Emmanuel Horvilleur - Acapulco.mp3'
     },
     {
-        titulo:'Siddhartha',
-        nombre:'Nada por Hecho',
+        titulo:'Nada por Hecho',
+        nombre:'Siddhartha',
         fuente:'music/Siddhartha - Nada por Hecho.mp3'
     },
     {
         titulo:'Danzón Nereidas',
-        nombre:'Nada por Hecho',
+        nombre:'Enjambre',
         fuente:'music/Enjambre - Danzón Nereidas.mp3'
     }, 
     {
-        titulo:'Enjambre',
-        nombre:'Secuaz',
+        titulo:'Secuaz',
+        nombre:'Enjambre',
         fuente:'music/Enjambre - Secuaz - Noches de Salón.mp3'
     },
     {
-        titulo:'Enjambre',
-        nombre:'Vida En El Espejo',
+        titulo:'Vida En El Espejo',
+        nombre:'Enjambre',
         fuente:'music/Enjambre - Vida En El Espejo - Noches de Salón.mp3'
     },
     {
-        titulo:'Enjambre',
-        nombre:'Divergencia',
+        titulo:'Divergencia',
+        nombre:'Enjambre',
         fuente:'music/Enjambre - Divergencia - Noches de Salón.mp3'
     },
     
