@@ -10,6 +10,10 @@ const botonReproducirPausar = document.querySelector('.controles button.reproduc
 const botonAtras = document.querySelector('.controles button.atras')
 const botonAdelante = document.querySelector('.controles button.adelante')
 
+const indicadorCarga = document.getElementById("indicadorCarga");
+let intervaloCarga;
+let contadorPuntos = 0;
+
 const canciones = [
     {
         titulo:'Como queremos',
@@ -124,12 +128,31 @@ botonAtras.addEventListener('click',()=>{
     /* console.log(indiceCancionActual); */ 
 })
 
-
-
 /* progreso.addEventListener('change', ()=>{
     reproducirCancion();
 })  */
 
 botonReproducirPausar.addEventListener('click', reproducirPausar);
+
+// Función para actualizar el texto del indicador de carga
+const actualizarTextoCarga = () => {
+    const puntos = '.'.repeat(contadorPuntos % 4); // Crea una cadena de puntos
+    indicadorCarga.textContent = `Cargando${puntos}`; // Actualiza el texto
+    contadorPuntos++; // Incrementa el contador
+}
+
+// Evento para mostrar el indicador de carga
+cancion.addEventListener('loadstart', () => {
+    indicadorCarga.style.display = 'block'; // Muestra el indicador de carga
+    contadorPuntos = 0; // Reinicia el contador de puntos
+    actualizarTextoCarga(); // Muestra el texto inicial
+    intervaloCarga = setInterval(actualizarTextoCarga, 500); // Actualiza el texto cada 500 ms
+});
+
+// Evento para ocultar el indicador de carga
+cancion.addEventListener('canplay', () => {
+    clearInterval(intervaloCarga); // Detiene el intervalo
+    indicadorCarga.style.display = 'none'; // Oculta el indicador de carga
+});
 
 actualizarInfoCancion();
