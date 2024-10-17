@@ -18,8 +18,7 @@ body{
     min-height: 100vh;
     align-items: center;
     width: 100%;
-    background: url(img/img1.jpg);
-    background-repeat: no-repeat;
+    background: url(img/img1.jpg) no-repeat center center;
     background-size: cover;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -130,4 +129,58 @@ body > * {
     padding: 10px; 
     border-radius: 5px; 
     z-index: 10; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+
+    body {
+        background-size: cover; /* Mantener el tamaño cubriendo en pantallas pequeñas */
+    }
+
+    .reproductor-musica {
+        width: 90%; /* Ancho del reproductor en pantallas pequeñas */
+        padding: 10px; /* Espaciado reducido */
+    }
+
+    .reproductor-musica h1 {
+        font-size: 1.2rem; /* Tamaño de fuente más pequeño */
+    }
+
+    .reproductor-musica p {
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    }
+
+    .controles button {
+        width: 40px; /* Botones más pequeños */
+        font-size: 1.2rem; /* Tamaño de fuente más pequeño */
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        background-size: cover; /* Mantener el tamaño cubriendo en pantallas más pequeñas */
+    }
+
+    .reproductor-musica {
+        padding: 5px; /* Espaciado aún más reducido */
+    }
+
+    .reproductor-musica h1 {
+        font-size: 1.1rem; /* Tamaño de fuente aún más pequeño */
+    }
+
+    .reproductor-musica p {
+        font-size: 0.8rem; /* Tamaño de fuente aún más pequeño */
+    }
+
+    .controles button {
+        width: 35px; /* Botones aún más pequeños */
+        font-size: 1rem; /* Tamaño de fuente aún más pequeño */
+    }
+
+    .cargando {
+        font-size: 18px; /* Ajuste de tamaño de la fuente de carga */
+    }
 }
